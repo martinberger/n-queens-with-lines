@@ -11,8 +11,9 @@ class Main {
 
 	for ( int n = low; n <= high; n++ ){
 	    var results = Algorithm.queens ( n );
-	    //	    NQueens.present ( n, results );
+	    var resultsNo3Lines = Algorithm.queensNo3Lines ( n );
 	    System.out.println( "queens( " + n + " ) has " + results.size( ) + " solutions");
+	    System.out.println( "queensNo3Lines( " + n + " ) has " + resultsNo3Lines.size( ) + " solutions");	    
 	}
     }
 
