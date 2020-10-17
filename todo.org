@@ -26,8 +26,8 @@ no crazy validation (why)
 * DONE Write tests
 * DONE Write help, version etc
 * DONE Clean .gitignore
-* TODO Apply code formatting tool
-* TODO Write narrative
+* DONE Apply code formatting tool
+* DONE Write narrative
 
 (1) I set myself a time budget of 6 hours to complete this challenge.
 Since I have never used Gradle before, and never written a non-trivial
@@ -42,9 +42,9 @@ N-Queens-3-Line.
 (4) No sophisticated error handling
 * DONE Make nice git mcomments
 * DONE Upload to Github, private repo
-* TODO Invite Compilerworks people
-* TODO Make nice gradle usability
-* TODO Make basic README.md
+* DONE Invite Compilerworks people
+* DONE Make nice gradle usability
+* DONE Make basic README.md
 * DONE Command line options
 I want the following
 - n
@@ -52,10 +52,14 @@ I want the following
 - visualise
 - help
 - version
-* TODO make notes on what I want to achieve
+* DONE make notes on what I want to achieve
 * DONE Basic error handling 
 * DONE Unify Boolean and boolean
 * DONE Switch on pedantic warning / error checking
-* TODO -n 15  takes about 2 minutes
-
 Sat 17 Oct 2020 22:04:39 BST
+Sat 17 Oct 2020 22:17:38 BST
+* DONE -n 15  takes about 2 minutes
+
+-n 16 takes about 13 minutes
+Sat 17 Oct 2020 22:04:39 BST
+Sat 17 Oct 2020 22:17:38 BST
