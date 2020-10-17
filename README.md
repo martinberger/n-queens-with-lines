@@ -108,6 +108,10 @@ The program has the following command line options.
 Regardless of the optional parameter, the program will always print
 out the number of valid boards found.
 
+**Feasible parameters.** In our experience, using a 2020 MacBook Pro,
+solving the N-Queens-3-Line for N=15 takes about 2 minutes. For N=16
+it takes about 13 minutes.
+
 # Bibliography
 
 [A] https://en.wikipedia.org/wiki/Eight_queens_puzzle
