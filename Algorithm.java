@@ -17,22 +17,6 @@ class Algorithm {
 	return clone;
     }
     
-
-    public static void present ( int n, ArrayList<ArrayList<Queen>>  solutions ) {
-	for ( var solution : solutions ) {
-	    output ( n, solution );
-	}
-    }
-
-    public static void output ( int n, ArrayList<Queen>  solution ) {
-	System.out.println();
-	for ( var queen : solution ) {
-	    var row = "_|".repeat( queen.y ) + "Q" + "|_".repeat(n - queen.y-1);
-	    System.out.println( row );
-	}
-    
-    }
-    
     public static ArrayList<ArrayList<Queen>> place ( IsSafe  isSafe, int n, int row ) {
 	if ( row < 0 ) {
 	    var results = new ArrayList<ArrayList<Queen>>();		    
@@ -105,6 +89,30 @@ class Algorithm {
     public static ArrayList<ArrayList<Queen>> queensNo3Lines ( int n ) {
 	return genericQueens ( (Queen newQueen, ArrayList<Queen> solution) -> isSafeNo3Lines (newQueen, solution), n );
     }    
+
+
+    public static void present ( int n, ArrayList<ArrayList<Queen>>  solutions ) {
+	for ( var solution : solutions ) {
+	    output ( n, solution );
+	}
+    }
+
+    public static void output ( int n, ArrayList<Queen>  solution ) {
+	System.out.println();
+	for ( var queen : solution ) {
+	    var row = "_|".repeat( queen.y ) + "Q" + "|_".repeat(n - queen.y-1);
+	    System.out.println( row );
+	}
+    
+    }
+    
+    public static void run ( Config config ) {
+	var results = queensNo3Lines ( config.n );
+	if ( config.visualise ) {
+	    present( config.n, results );
+	}
+	System.out.println( "Found " + results.size () + " solutions." );
+    }
     
 }
 
