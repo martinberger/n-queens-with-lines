@@ -17,10 +17,10 @@ I use a two step approach
     - Visual inspection of simple cases for correctness.
 * DONE Verification step 1: get N-Queens verified
 * DONE Verification step 2: get N-Queens-3-Line verified
-* TODO Clean up tests, automante
+* DONE Clean up tests, automante
 * TODO check input parameters
 no crazy validation (why)
-* TODO Write tests
+* DONE Write tests
 * TODO Write help, version etc
 * TODO Clean .gitignore
 * TODO Apply code formatting tool
@@ -38,10 +38,16 @@ N-Queens-3-Line.
 
 (4) No sophisticated error handling
 * TODO Make nice git mcomments
-* TODO Upload to Github, private repo
+* DONE Upload to Github, private repo
 * TODO Invite Compilerworks people
 * TODO Make nice gradle usability
 * TODO Make basic README.md
 * TODO Command line options
+I want the following
+- n
+- lo hi
+- visualise
+- help
+- version
 * TODO make notes on what I want to achieve
 * TODO Basic error handling 
