@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 interface IsSafe {
-    Boolean check (Queen q, ArrayList<Queen> solution);
+    boolean check (Queen q, ArrayList<Queen> solution);
 }
 
 
@@ -32,7 +32,7 @@ class Algorithm {
 	return place ( isSafe, n, n-1 );
     }
 
-    public static Boolean isSafeChess ( Queen newQueen, ArrayList<Queen> solution ) {
+    public static boolean isSafeChess ( Queen newQueen, ArrayList<Queen> solution ) {
 	for ( Queen queen : solution ) {
 	    if ( newQueen.x == queen.x ||
 		 newQueen.y == queen.y ||
@@ -41,7 +41,7 @@ class Algorithm {
 	return true;
     }
 
-    public static Boolean is3Line (  Queen q1,  Queen q2,  Queen q3 ) {
+    public static boolean is3Line (  Queen q1,  Queen q2,  Queen q3 ) {
 	if ( q1.x == q2.x || q1.x == q3.x || q2.x == q3.x ) return false;
 	var slope12 = new Rational ( q2.y - q1.y, Math.abs( q2.x - q1.x ) );
 	var slope13 = new Rational ( q3.y - q1.y, Math.abs( q3.x - q1.x ) );
@@ -49,7 +49,7 @@ class Algorithm {
 	return slope12.rationalEquals( slope13 ) && slope12.rationalEquals( slope23 );
     }
 
-    public static Boolean has3Line ( ArrayList<Queen> solution ) {
+    public static boolean has3Line ( ArrayList<Queen> solution ) {
 	for ( Queen q1 : solution ) {
 	    for ( Queen q2 : solution ) {
 		for ( Queen q3 : solution ) {
@@ -60,7 +60,7 @@ class Algorithm {
 	return false;
     }
 
-    public static Boolean adds3Line ( Queen newQueen, ArrayList<Queen> solution ) {
+    public static boolean adds3Line ( Queen newQueen, ArrayList<Queen> solution ) {
 	for ( Queen q1 : solution ) {
             for ( Queen q2 : solution ) {
 		if ( is3Line ( newQueen, q1, q2 ) ) {
@@ -68,7 +68,7 @@ class Algorithm {
 	return false;
     }
     
-    public static Boolean isSafeNo3Lines ( Queen newQueen, ArrayList<Queen> solution ) {    
+    public static boolean isSafeNo3Lines ( Queen newQueen, ArrayList<Queen> solution ) {    
 	return isSafeChess ( newQueen, solution ) && !adds3Line ( newQueen, solution );
     }
     
@@ -85,7 +85,7 @@ class Algorithm {
 	if ( config.visualise ) {
 	    Helpers.present( config.n, results );
 	}
-	System.out.println( "Found " + results.size () + " solutions." );
+	System.out.println( "\nFound " + results.size () + " solutions.\n" );
     }
     
 }

@@ -11,7 +11,7 @@ class Tester {
     }
     
     interface Predicate<T> {
-	Boolean check (T t);
+	boolean check (T t);
     }
     
     public  <T> ArrayList<T> filter ( ArrayList<T> l, Predicate<T> remove ) {

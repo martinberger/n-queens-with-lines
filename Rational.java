@@ -16,7 +16,7 @@ class Rational {
         else return gcd(n, m % n);
     }
 
-    public Boolean rationalEquals(Rational that) {
+    public boolean rationalEquals(Rational that) {
 	return this.num == that.num && this.den == that.den;
     }
 }
