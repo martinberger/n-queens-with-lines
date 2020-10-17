@@ -1,6 +1,6 @@
 class Rational {
-    private int num;   // the numerator
-    private int den;   // the denominator
+    private int num;
+    private int den;
     
     public Rational(int numerator, int denominator) {
         if (denominator == 0) {
