@@ -8,9 +8,9 @@ class Main {
 	    Algorithm.run( config );
 	}
 	catch ( CustomException e ) {
+	    System.out.println ( "" );	    
 	    System.out.println ( e.getMessage() );	    
 	    System.out.println ( Strings.help );
-	    System.out.println ( "" );	    
 	}
 	catch ( Exception e ) {
 	    System.out.println ( "Aboring, caught unexpected exception:\n" );
