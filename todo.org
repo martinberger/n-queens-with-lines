@@ -16,7 +16,8 @@ I use a two step approach
 
     - Visual inspection of simple cases for correctness.
 * DONE Verification step 1: get N-Queens verified
-* TODO Verification step 2: get N-Queens-3-Line verified
+* DONE Verification step 2: get N-Queens-3-Line verified
+* TODO Clean up tests, automante
 * TODO check input parameters
 no crazy validation (why)
 * TODO Write tests
