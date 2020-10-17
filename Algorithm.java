@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.ArrayList.*;
 
-class Alogrithm {
+class Algorithm {
 
     public static <T>  ArrayList<T> shallowClone( ArrayList<T> l ) {
 	var clone = new ArrayList<T>();
