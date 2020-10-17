@@ -19,11 +19,11 @@ line 2.
        _|_|_|_|_|_|_|_|
        Q|_|_|_|_|_|_|_|
 
-From now on we use the term **N-Queens-No-Line** to refer to this
+From now on we use the term **N-Queens-With-Lines** to refer to this
 generalisation of the N-Queens problem.
 
 **Assumptions and insights.** The N-Queens problem is NP-complete
-[B]. Although we have no proof, it is likely that the N-Queens-3-Line
+[B]. Although we have no proof, it is likely that the N-Queens-With-Lines
 problem is *also* NP-complete. It is therefore extremely unlikely that
 an efficient algorithm exist. For this reason, and given the limited
 time budget, we implement a simple backtracking algorithm, with an
@@ -48,7 +48,7 @@ brute-force approach to the identification of prohibited lines:
   [D]. Instead, we use a conventional Rational data type (in
   Rational.java). The main problem of rational numbers, exploding
   numerator and denominator, are avoided here, since the exponential
-  nature of (our approach to) the N-Queens-3-Line problem ensures
+  nature of (our approach to) the N-Queens-With-Lines problem ensures
   small numerator and denominator for practically feasible N.
 
 
@@ -68,12 +68,12 @@ wrong. Finally, we have limited time.
    [E].
 
 3. Use the solver from (1) to get a *second* solver (very inefficient)
-   for the N-Queens-3-Line problem:
+   for the N-Queens-With-Lines problem:
 
     - First generate all N-Queens boards
     - Then *filter* all boards that contains lines with 3 or more points
 
-4. Compare the two solvers of the N-Queens-3-Line problem against each
+4. Compare the two solvers of the N-Queens-With-Lines problem against each
 other. More precisely, compare if the find identical numbers of
 solutions.
 
@@ -113,7 +113,7 @@ Here is an example use case:
     java Main -n 8 -visualise    
 
 **Feasible parameters.** In our experience, using a 2020 MacBook Pro,
-solving the N-Queens-3-Line for N=15 takes about 2 minutes. For N=16
+solving the N-Queens-With-Lines for N=15 takes about 2 minutes. For N=16
 it takes about 13 minutes.
 
 # Bibliography
