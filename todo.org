@@ -11,8 +11,11 @@ I use a two step approach
   http://oeis.org/A000170 as my oracle)
 
 - For N-Queens-3-Line ...
-    -filter approach
-* TODO Verification step 1: get N-Queens verified
+    - filter approach: first run normal N-queens and then filter out all solutions with
+      3Lines. Compare with approach which does not generate 3Lines at all.
+
+    - Visual inspection of simple cases for correctness.
+* DONE Verification step 1: get N-Queens verified
 * TODO Verification step 2: get N-Queens-3-Line verified
 * TODO check input parameters
 no crazy validation (why)
