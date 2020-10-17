@@ -1,0 +1,8 @@
+*~
+*.class 
+project/
+target
+.bsp/
+*.pdf
+*.jpg
+*.o

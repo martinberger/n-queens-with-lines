@@ -1,0 +1,29 @@
+* TODO Remove commented out code
+* 
+* TODO check input parameters
+no crazy validation (why)
+* TODO Write tests
+* TODO Write help, version etc
+* TODO Clean .gitignore
+* TODO Apply code formatting tool
+* TODO Write narrative
+
+(1) I set myself a time budget of 6 hours to complete this challenge.
+Since I have never used Gradle before, and never written a non-trivial
+Java program, most of the time will be spent fixing trivial Gradle and
+Java issues, I don't really have much time for optimisaitions.
+
+(2) N-Queens is NP-complete, and I conjecture that so is
+N-Queens-3-Line.
+
+(3) Test oracle is a problem.
+
+(4) No sophisticated error handling
+* TODO Make nice git mcomments
+* TODO Upload to Github, private repo
+* TODO Invite Compilerworks people
+* TODO Make nice gradle usability
+* TODO Make basic README.md
+* TODO Command line options
+* TODO make notes on what I want to achieve
+* TODO Basic error handling 
