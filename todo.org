@@ -1,5 +1,5 @@
 * TODO Remove commented out code
-* Verification Plan 
+* TODO Verification Plan 
 
 Problem has oracle problem (Justify)
 
@@ -12,6 +12,8 @@ I use a two step approach
 
 - For N-Queens-3-Line ...
     -filter approach
+* TODO Verification step 1: get N-Queens verified
+* TODO Verification step 2: get N-Queens-3-Line verified
 * TODO check input parameters
 no crazy validation (why)
 * TODO Write tests
