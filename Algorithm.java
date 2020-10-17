@@ -7,13 +7,12 @@ interface IsSafe {
 class Algorithm {
 
   public static ArrayList<ArrayList<Queen>> place(IsSafe isSafe, int n, int row) {
+    var results = new ArrayList<ArrayList<Queen>>();
     if (row < 0) {
-      var results = new ArrayList<ArrayList<Queen>>();
       var empty = new ArrayList<Queen>();
       results.add(empty);
       return results;
     }
-    var results = new ArrayList<ArrayList<Queen>>();
     for (ArrayList<Queen> queens : place(isSafe, n, row - 1)) {
       for (int col = 0; col < n; col++) {
         var l = Helpers.shallowClone(queens);
