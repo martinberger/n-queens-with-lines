@@ -8,7 +8,6 @@ class Helpers {
 	return clone;
     }
     
-
     public static void present ( int n, ArrayList<ArrayList<Queen>>  solutions ) {
 	for ( var solution : solutions ) {
 	    output ( n, solution );
@@ -21,7 +20,6 @@ class Helpers {
 	    var row = "_|".repeat( queen.y ) + "Q" + "|_".repeat(n - queen.y-1);
 	    System.out.println( row );
 	}
-    
     }
 
 }

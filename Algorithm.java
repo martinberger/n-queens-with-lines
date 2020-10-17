@@ -7,12 +7,6 @@ interface IsSafe {
 
 class Algorithm {
 
-    public static <T>  ArrayList<T> shallowClone( ArrayList<T> l ) {
-	var clone = new ArrayList<T>();
-	for ( var t : l ) { clone.add ( t ); }
-	return clone;
-    }
-    
     public static ArrayList<ArrayList<Queen>> place ( IsSafe  isSafe, int n, int row ) {
 	if ( row < 0 ) {
 	    var results = new ArrayList<ArrayList<Queen>>();		    
@@ -23,7 +17,7 @@ class Algorithm {
 	var results = new ArrayList<ArrayList<Queen>>();		
 	for ( ArrayList<Queen> queens : place ( isSafe, n, row-1 ) ) {
 	    for ( int col = 0; col < n; col++ ) {
-		var l = shallowClone ( queens );
+		var l = Helpers.shallowClone ( queens );
 		var newQueen = new Queen ( row, col );
 		if ( isSafe.check ( newQueen, l ) )  {
 		     l.add (newQueen); // always returns true
@@ -86,26 +80,10 @@ class Algorithm {
 	return genericQueens ( (Queen newQueen, ArrayList<Queen> solution) -> isSafeNo3Lines (newQueen, solution), n );
     }    
 
-
-    public static void present ( int n, ArrayList<ArrayList<Queen>>  solutions ) {
-	for ( var solution : solutions ) {
-	    output ( n, solution );
-	}
-    }
-
-    public static void output ( int n, ArrayList<Queen>  solution ) {
-	System.out.println();
-	for ( var queen : solution ) {
-	    var row = "_|".repeat( queen.y ) + "Q" + "|_".repeat(n - queen.y-1);
-	    System.out.println( row );
-	}
-    
-    }
-    
     public static void run ( Config config ) {
 	var results = queensNo3Lines ( config.n );
 	if ( config.visualise ) {
-	    present( config.n, results );
+	    Helpers.present( config.n, results );
 	}
 	System.out.println( "Found " + results.size () + " solutions." );
     }
