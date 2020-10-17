@@ -1,7 +1,39 @@
 import java.util.ArrayList;
 
+class Config {
+    public boolean visualise = false;
+    public int n = -1;    
+}
+
+
+
 class Main {
 
+    static void checkConsistency ( Config config ) {
+	if ( config.n < 0 ) {
+	    throw new RuntimeException ( "Need a number n to run program." );
+	}
+    }
+    
+    static Config parse ( String[] args ) {
+	var config = new Config();
+	for ( int i = 0; i < args.length; ) {
+	    if ( args [ i ] == "-visualise" ) { config.visualise = true; i++; continue; }
+	    if ( i < args.length-1 && args [ i ] == "-n" ) {
+		    i++;
+		    try {
+			config.n = Integer.parseInt( args [ i ] );
+			i++;
+		    }
+		    catch ( Exception e ) {
+			throw new RuntimeException ( "Could not convert numeric parameter" );
+		    }
+	    }
+	}
+	checkConsistency ( config );
+	return config;
+    }
+    
     interface Predicate<T> {
 	Boolean check (T t);
     }
