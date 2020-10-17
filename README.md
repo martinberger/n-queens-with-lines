@@ -1,12 +1,14 @@
 **Introduction.** This software implements a variation of the famous
-N-Queens problem [A] which asks to compute all NxN chess boards with
-N queens, placed so that no two queens threaten each other; thus, a
+N-Queens problem [A] which asks to compute all NxN chess boards with N
+queens, placed so that no two queens threaten each other; thus, a
 solution requires that no two queens share the same row, column, or
-diagonal. In addition it is required that:
+diagonal. The variation under consideration here is that *in addition*
+it is required of valid boards that:
 
      no 3 or more queens be in a straight line.
 
-Here is an 8x8 board with a line of length 4. The slope of the line 2.
+Here is an example1 8x8 board with a line of length 4. The slope of the
+line 2.
 
        _|_|_|_|_|_|_|_|
        _|_|_|Q|_|_|_|_|
@@ -17,19 +19,18 @@ Here is an 8x8 board with a line of length 4. The slope of the line 2.
        _|_|_|_|_|_|_|_|
        Q|_|_|_|_|_|_|_|
 
-From now on we will use the term **N-Queens-No-Line** to refer to this
+From now on we use the term **N-Queens-No-Line** to refer to this
 generalisation of the N-Queens problem.
 
 **Assumptions and insights.** The N-Queens problem is NP-complete
 [B]. Although we have no proof, it is likely that the N-Queens-3-Line
 problem is *also* NP-complete. It is therefore extremely unlikely that
 an efficient algorithm exist. For this reason, and given the limited
-time budget, we will implement a simple backtracking algorithm, with
-an emphasis on clarity of the algorithm. In particular, we use a
-somewhat brute-force approach to the identification of prohibited
-lines:
+time budget, we implement a simple backtracking algorithm, with an
+emphasis on clarity of the algorithm. In particular, we use a somewhat
+brute-force approach to the identification of prohibited lines:
 
-- We will simply consider all triples of queens, compute the slop(es)
+- We simply consider all triples of queens, compute the slop(es)
   they form and compare if they form a line with three or more
   points. There is redundancy, that could probably be eliminated by
   preprocessing (ordering) queens by row / column (see many algorithm
@@ -41,14 +42,14 @@ lines:
   easier.
 
 - The core insight making this problem digestible is that slopes of
-  lines on discrete grids are always rational numbers, this allows us
-  to avoid the many intricacies and pitfalls of Java's float (32-bit
-  IEEE-754) and double (64-bit IEEE-754) data types [D]. Instead, we
-  use a conventional Rational data type (in Rational.java). The main
-  problem of rational, exploding numerator and denominator, are avoided
-  here, since the exponential nature of (our approach to) the
-  N-Queens-3-Line problem ensures small numerator and denominator for
-  practically feasible N.
+  lines on discrete grids are always *rational numbers*, this allows
+  us to avoid the many intricacies and pitfalls of Java's `float`
+  (32-bit IEEE-754) and `double` (64-bit IEEE-754) data types
+  [D]. Instead, we use a conventional Rational data type (in
+  Rational.java). The main problem of rational numbers, exploding
+  numerator and denominator, are avoided here, since the exponential
+  nature of (our approach to) the N-Queens-3-Line problem ensures
+  small numerator and denominator for practically feasible N.
 
 
 **Verification Plan.** The problem does *not* come with a customer
@@ -81,13 +82,12 @@ resources, better testing could be done.
 
 **Libraries and tools.** Since I have not written (non-trivial) Java
 before, I am not familiar with the Java library and tooling eco
-system. I will therefore write everything I need by hand.  In
+system. I therefore write everything I need by hand.  In
 particular, since I have not used Gradle before, and it's similar to
-tools like SBT or Maven, I will not use it.
+tools like SBT or Maven, I not use it.
 
-**Compiling and running the code.**
-
-All relevant code is in the root directory and can be compiled by invoking
+**Compiling and running the code.** All relevant code is in the root
+directory and can be compiled by invoking
 
     javac *.java
 
