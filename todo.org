@@ -18,6 +18,7 @@ I use a two step approach
 * DONE Verification step 1: get N-Queens verified
 * DONE Verification step 2: get N-Queens-3-Line verified
 * DONE Clean up tests, automante
+* DONE Upload to Github, private repo
 * TODO check input parameters
 no crazy validation (why)
 * DONE Write tests
