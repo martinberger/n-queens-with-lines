@@ -1,5 +1,7 @@
-* TODO Remove commented out code
-* TODO Verification Plan 
+* DONE Make note about code comments
+* DONE remove irrelevantr includes
+* DONE Remove commented out code
+* DONE Verification Plan 
 
 Problem has oracle problem (Justify)
 
@@ -19,11 +21,11 @@ I use a two step approach
 * DONE Verification step 2: get N-Queens-3-Line verified
 * DONE Clean up tests, automante
 * DONE Upload to Github, private repo
-* TODO check input parameters
+* DONE check input parameters
 no crazy validation (why)
 * DONE Write tests
-* TODO Write help, version etc
-* TODO Clean .gitignore
+* DONE Write help, version etc
+* DONE Clean .gitignore
 * TODO Apply code formatting tool
 * TODO Write narrative
 
@@ -38,12 +40,12 @@ N-Queens-3-Line.
 (3) Test oracle is a problem.
 
 (4) No sophisticated error handling
-* TODO Make nice git mcomments
+* DONE Make nice git mcomments
 * DONE Upload to Github, private repo
 * TODO Invite Compilerworks people
 * TODO Make nice gradle usability
 * TODO Make basic README.md
-* TODO Command line options
+* DONE Command line options
 I want the following
 - n
 - lo hi
@@ -51,4 +53,9 @@ I want the following
 - help
 - version
 * TODO make notes on what I want to achieve
-* TODO Basic error handling 
+* DONE Basic error handling 
+* DONE Unify Boolean and boolean
+* DONE Switch on pedantic warning / error checking
+* TODO -n 15  takes about 2 minutes
+
+Sat 17 Oct 2020 22:04:39 BST
