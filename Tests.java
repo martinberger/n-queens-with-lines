@@ -14,7 +14,7 @@ class Tester {
     boolean check(T t);
   }
 
-  public <T> ArrayList<T> filter(ArrayList<T> l, Predicate<T> remove) {
+  private <T> ArrayList<T> filter(ArrayList<T> l, Predicate<T> remove) {
     var res = new ArrayList<T>();
     for (var t : l) {
       if (!remove.check(t)) {
@@ -24,13 +24,13 @@ class Tester {
     return res;
   }
 
-  public void runUnitTests(int lo, int hi) {
+  private void runUnitTests(int lo, int hi) {
     System.out.println("   Running unit tests.");
     // Currently empty, problem + available resources
     // suggest only to use integration testesr
   }
 
-  public void runCountingTests(int lo, int hi) {
+  private void runCountingTests(int lo, int hi) {
     System.out.println("   Running integration tests for N-Queens.");
     int[] oracle = {
       1, 1, 0, 0, 2, 10, 4, 40, 92, 352, 724, 2680, 14200, 73712, 365596, 2279184, 1477251
@@ -44,7 +44,7 @@ class Tester {
     }
   }
 
-  public void runFilterTests(int lo, int hi) {
+  private void runFilterTests(int lo, int hi) {
     System.out.println("   Running integration tests for N-Queens With Lines.");
     for (int i = Math.max(lo, 0); i <= hi; i++) {
       numberOfTests++;

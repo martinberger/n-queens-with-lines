@@ -14,7 +14,7 @@ class Config {
     }
   }
 
-  static Config parse(String[] args) throws CustomException {
+  private static Config parse(String[] args) throws CustomException {
     var config = new Config();
     for (int i = 0; i < args.length; i++) {
       if (args[i].equals("-visualise")) {
@@ -33,7 +33,7 @@ class Config {
     return config;
   }
 
-  static Config handleCommandLine(String[] args) throws CustomException {
+  public static Config handleCommandLine(String[] args) throws CustomException {
     var config = parse(args);
     checkConsistency(config);
     return config;

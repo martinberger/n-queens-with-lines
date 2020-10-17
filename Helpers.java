@@ -16,7 +16,7 @@ class Helpers {
     }
   }
 
-  public static void output(int n, ArrayList<Queen> solution) {
+  private static void output(int n, ArrayList<Queen> solution) {
     System.out.println();
     for (var queen : solution) {
       var row = "_|".repeat(queen.y) + "Q" + "|_".repeat(n - queen.y - 1);

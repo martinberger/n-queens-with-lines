@@ -6,7 +6,7 @@ interface IsSafe {
 
 class Algorithm {
 
-  public static ArrayList<ArrayList<Queen>> place(IsSafe isSafe, int n, int row) {
+  private static ArrayList<ArrayList<Queen>> place(IsSafe isSafe, int n, int row) {
     var results = new ArrayList<ArrayList<Queen>>();
     if (row < 0) {
       var empty = new ArrayList<Queen>();
@@ -26,11 +26,11 @@ class Algorithm {
     return results;
   }
 
-  public static ArrayList<ArrayList<Queen>> genericQueens(IsSafe isSafe, int n) {
+  private static ArrayList<ArrayList<Queen>> genericQueens(IsSafe isSafe, int n) {
     return place(isSafe, n, n - 1);
   }
 
-  public static boolean isSafeChess(Queen newQueen, ArrayList<Queen> solution) {
+  private static boolean isSafeChess(Queen newQueen, ArrayList<Queen> solution) {
     for (Queen queen : solution) {
       if (newQueen.x == queen.x
           || newQueen.y == queen.y
@@ -41,7 +41,7 @@ class Algorithm {
     return true;
   }
 
-  public static boolean is3Line(Queen q1, Queen q2, Queen q3) {
+  private static boolean is3Line(Queen q1, Queen q2, Queen q3) {
     if (q1.x == q2.x || q1.x == q3.x || q2.x == q3.x) return false;
     var slope12 = new Rational(q2.y - q1.y, Math.abs(q2.x - q1.x));
     var slope13 = new Rational(q3.y - q1.y, Math.abs(q3.x - q1.x));
@@ -60,7 +60,7 @@ class Algorithm {
     return false;
   }
 
-  public static boolean adds3Line(Queen newQueen, ArrayList<Queen> solution) {
+  private static boolean adds3Line(Queen newQueen, ArrayList<Queen> solution) {
     for (Queen q1 : solution) {
       for (Queen q2 : solution) {
         if (is3Line(newQueen, q1, q2)) {
@@ -71,7 +71,7 @@ class Algorithm {
     return false;
   }
 
-  public static boolean isSafeNo3Lines(Queen newQueen, ArrayList<Queen> solution) {
+  private static boolean isSafeNo3Lines(Queen newQueen, ArrayList<Queen> solution) {
     return isSafeChess(newQueen, solution) && !adds3Line(newQueen, solution);
   }
 
