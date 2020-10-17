@@ -1,5 +1,17 @@
 * TODO Remove commented out code
-* 
+* Verification Plan 
+
+Problem has oracle problem (Justify)
+
+
+- economnics of v erification
+I use a two step approach
+
+- For pure N-Queens, I just count solutions (Compare with :
+  http://oeis.org/A000170 as my oracle)
+
+- For N-Queens-3-Line ...
+    -filter approach
 * TODO check input parameters
 no crazy validation (why)
 * TODO Write tests
