@@ -63,7 +63,7 @@ brute-force approach to the identification of prohibited lines:
   small numerator and denominator for practically feasible N.
 
 
-**Verification Plan.** The problem does *not* come with a customer
+**Verification plan.** The problem does *not* come with a customer
 approved test suite, or other suitable testing oracle. For N > 8
 visual inspection of solutions is becomes unreliable quickly. Moreover
 it is not easy to work out if the algorithm might have 'forgotten' a
@@ -97,7 +97,7 @@ system. I therefore write everything I need by hand.  In
 particular, since I have not used Gradle before, and it's similar to
 tools like SBT or Maven, I will not use Gradle.
 
-**Compiling and running the code.** All relevant code is in the root
+**Compiling the code.** All relevant code is in the root
 directory and can be compiled by invoking
 
     javac *.java
