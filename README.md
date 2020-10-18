@@ -21,7 +21,17 @@ length 3 and slope -3.
        Q|_|_|_|_|_|_|_|        _|_|_|_|Q|_|_|_|
 
 From now on we use the term **N-Queens-With-Lines** to refer to this
-generalisation of the N-Queens problem.
+generalisation of the N-Queens problem. Here is an example of a solution to the
+8-Queens-With-Lines problem:
+
+       _|_|_|_|_|Q|_|_
+       _|Q|_|_|_|_|_|_
+       _|_|_|_|_|_|Q|_
+       Q|_|_|_|_|_|_|_
+       _|_|_|Q|_|_|_|_
+       _|_|_|_|_|_|_|Q
+       _|_|_|_|Q|_|_|_
+       _|_|Q|_|_|_|_|_
 
 **Assumptions and insights.** The N-Queens problem is NP-complete
 [B]. Although we have no proof, it is likely that the N-Queens-With-Lines
