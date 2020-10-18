@@ -7,8 +7,8 @@ it is required of valid boards that:
 
      no 3 or more queens be in a straight line.
 
-Here is an example1 8x8 board with a line of length 4. The slope of the
-line 2.
+Here is an example of an 8x8 board with a line of length 4. The slope
+of the line 2.
 
        _|_|_|_|_|_|_|_|
        _|_|_|Q|_|_|_|_|
