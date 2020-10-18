@@ -7,17 +7,18 @@ it is required of valid boards that:
 
      no 3 or more queens be in a straight line.
 
-Here is an example of an 8x8 board with a line of length 4. The slope
-of the line 2.
+Here are two examples of lines of queens on an 8x8 board.  The left
+board has a line of length 4 with slope 2. The line on the right has
+length 3 and slope -3.
 
-       _|_|_|_|_|_|_|_|
-       _|_|_|Q|_|_|_|_|
-       _|_|_|_|_|_|_|_|
-       _|_|Q|_|_|_|_|_|
-       _|_|_|_|_|_|_|_|
-       _|Q|_|_|_|_|_|_|
-       _|_|_|_|_|_|_|_|
-       Q|_|_|_|_|_|_|_|
+       _|_|_|_|_|_|_|_|        _|_|_|_|_|_|_|_|
+       _|_|_|Q|_|_|_|_|        _|_|Q|_|_|_|_|_|
+       _|_|_|_|_|_|_|_|        _|_|_|_|_|_|_|_|
+       _|_|Q|_|_|_|_|_|        _|_|_|_|_|_|_|_|
+       _|_|_|_|_|_|_|_|        _|_|_|Q|_|_|_|_|
+       _|Q|_|_|_|_|_|_|        _|_|_|_|_|_|_|_|
+       _|_|_|_|_|_|_|_|        _|_|_|_|_|_|_|_|
+       Q|_|_|_|_|_|_|_|        _|_|_|_|Q|_|_|_|
 
 From now on we use the term **N-Queens-With-Lines** to refer to this
 generalisation of the N-Queens problem.
