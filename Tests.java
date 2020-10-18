@@ -27,7 +27,7 @@ class Tester {
   private void runUnitTests(int lo, int hi) {
     System.out.println("   Running unit tests.");
     // Currently empty, problem + available resources
-    // suggest only to use integration testesr
+    // suggest only to use integration tests
   }
 
   private void runCountingTests(int lo, int hi) {
