@@ -45,7 +45,7 @@ brute-force approach to the identification of prohibited lines:
   they form and compare if they form a line with three or more
   points. There is redundancy, that could probably be eliminated by
   preprocessing (ordering) queens by row / column (see many algorithm
-  in computational geometry, e.g. the convex hull problem [C]. We
+  in computational geometry, e.g. the convex hull problem [C]). We
   avoid because it makes the code more complicated and we have not
   enough time. This also allows us to keep the core algorithm (the
   method `genericQueens` in Algorithm.java) virtually identical with
