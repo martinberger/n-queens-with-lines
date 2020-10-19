@@ -9,7 +9,7 @@ class Main {
       System.out.println(e.getMessage());
       System.out.println(Strings.help);
     } catch (Exception e) {
-      System.out.println("Aboring, caught unexpected exception:\n");
+      System.out.println("Aborting, caught unexpected exception:\n");
       System.out.println(e.getMessage());
       System.out.println("");
     }
