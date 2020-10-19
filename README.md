@@ -64,8 +64,8 @@ brute-force approach to the identification of prohibited lines:
 
 
 **Verification plan.** The problem does *not* come with a customer
-approved test suite, or other suitable testing oracle. For N > 8
-visual inspection of solutions is becomes unreliable quickly. Moreover
+approved test suite, or other suitable testing oracle. For N >= 8
+visual inspection of solutions becomes unreliable quickly. Moreover
 it is not easy to work out if the algorithm might have 'forgotten' a
 solution. In addition, the notion of line is itself somewhat tricky,
 and a specification that can be tested against, might be
@@ -124,8 +124,8 @@ Here is an example use case:
     java Main -n 8 -visualise    
 
 **Feasible parameters.** In our experience, using a 2020 MacBook Pro,
-solving the N-Queens-With-Lines for N=15 takes about 2 minutes. For N=16
-it takes about 13 minutes.
+solving the N-Queens-With-Lines for N=15 takes about 2 minutes. N=16
+takes about 13 minutes.
 
 # Bibliography
 
