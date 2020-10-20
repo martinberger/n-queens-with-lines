@@ -108,7 +108,7 @@ on the command line.
 
     java Main <options>
 
-The program has the following command line options.
+The program has the following command line parameters.
 
     -n <int>    This parameter is required, must be
                 non-negative and determines board size.
