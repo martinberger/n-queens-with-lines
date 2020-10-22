@@ -69,7 +69,8 @@ visual inspection of solutions becomes unreliable quickly. Moreover
 it is not easy to work out if the algorithm might have 'forgotten' a
 solution. In addition, the notion of line is itself somewhat tricky,
 and a specification that can be tested against, might be
-wrong. Finally, we have limited time.
+wrong. Finally, we have limited time. Hence we decided to use
+the following lightweight approach to testing.
 
 1. Implement an additional solver for the original N-Queens problem.
 
