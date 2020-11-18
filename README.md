@@ -95,8 +95,8 @@ resources, better testing could be done.
 **Libraries and tools.** Since I have not written (non-trivial) Java
 before, I am not familiar with the Java library and tooling eco
 system. I therefore write everything I need by hand.  In particular, I
-have not used Java build tools like Maven or Gradle before, so I won't
-use them here.
+have not used Java build tools like Maven or Gradle before, moreover,
+the whole project fits in one directory, so I won't use them here.
 
 **Compiling the code.** All relevant code is in the root
 directory and can be compiled by invoking
