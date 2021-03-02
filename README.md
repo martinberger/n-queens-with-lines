@@ -57,7 +57,7 @@ brute-force approach to the identification of prohibited lines:
   us to avoid the many intricacies and pitfalls of Java's `float`
   (32-bit IEEE-754) and `double` (64-bit IEEE-754) data types
   [D]. Instead, we use a conventional Rational data type (in
-  Rational.java). The main problem of rational numbers, exploding
+  Rational.java). The main problems of rational numbers, exploding
   numerator and denominator, are avoided here, since the exponential
   nature of (our approach to) the N-Queens-With-Lines problem ensures
   small numerator and denominator for practically feasible N.
