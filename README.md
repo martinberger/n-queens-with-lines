@@ -103,7 +103,9 @@ directory and can be compiled by invoking
 
     javac *.java
 
-on the command line.
+on the command line. In order to run the built-in test suite, use:
+
+    java Tests 
 
 **Running the code.** The program is run on the command line by invoking
 
@@ -123,10 +125,6 @@ out the number of valid boards found.
 Here is an example use case:
 
     java Main -n 8 -visualise    
-
-In order to run the built-in test suite, use:
-
-    java Tests 
 
 **Feasible parameters.** In our experience, using a 2020 MacBook Pro,
 solving the N-Queens-With-Lines for N=15 takes about 2 minutes. N=16
