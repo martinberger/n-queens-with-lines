@@ -124,6 +124,10 @@ Here is an example use case:
 
     java Main -n 8 -visualise    
 
+In order to run the built-in test suite, use:
+
+    java Tests 
+
 **Feasible parameters.** In our experience, using a 2020 MacBook Pro,
 solving the N-Queens-With-Lines for N=15 takes about 2 minutes. N=16
 takes about 13 minutes.
