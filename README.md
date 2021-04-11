@@ -103,7 +103,10 @@ directory and can be compiled by invoking
 
     javac *.java
 
-on the command line. In order to run the built-in test suite, use:
+on the command line. 
+
+**Testing the code.** The built-in suite of 26 tests can be run from
+the command line by invoking
 
     java Tests 
 
