@@ -1,9 +1,3 @@
-class CustomException extends Exception {
-  public CustomException(String errorMessage) {
-    super(errorMessage);
-  }
-}
-
 class Config {
   public boolean visualise = false;
   public int n = -1;
