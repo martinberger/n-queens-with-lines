@@ -41,13 +41,13 @@ time budget, we implement a simple backtracking algorithm, with an
 emphasis on clarity of the algorithm. In particular, we use a somewhat
 brute-force approach to the identification of prohibited lines:
 
-- We simply consider all triples of queens, compute the slop(es) they
-  form and compare if they form a line with three or more
-  points. There is redundancy, that could probably be eliminated by
+- We simply consider all triples of queens, compute the slope(s) they
+  form and check if they form a line with three or more
+  points. There is redundancy that could probably be eliminated by
   preprocessing (ordering) queens by row / column (see many algorithm
   in computational geometry, e.g. the convex hull problem [C]). We
   avoid such algorithmic cleverness because it makes the code much
-  more complicated, with at best (NP-completeness) a modest
+  more complicated, with, at best (NP-completeness) a modest
   speedup. This also allows us to keep the core algorithm (the method
   `genericQueens` in Algorithm.java) virtually identical with that for
   the original N-Queens problem. This makes verification easier.
