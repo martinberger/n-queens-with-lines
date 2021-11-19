@@ -1,0 +1,19 @@
+# From:
+#    https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+
+name: learn-github-actions
+
+on: [push]
+
+jobs:
+  build:	
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2    
+      - name: Compiling
+        run: |
+          javac *.java
+      - name: Running tests
+        run: |
+           java Tests
