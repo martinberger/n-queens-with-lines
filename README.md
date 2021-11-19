@@ -98,12 +98,13 @@ system. I therefore write everything I need by hand.  In particular, I
 have not used Java build tools like Maven or Gradle before, moreover,
 the whole project fits in one directory, so I won't use them here.
 
-**Compiling the code.** All relevant code is in the root
+**Compiling the code.** All relevant code is in the `src` directory 
 directory and can be compiled by invoking
 
-    javac *.java
+    javac -cp src -d . src/*.java 
 
-on the command line. 
+on the command line. The compiled code is added to the repo's root
+where it can be tested and run.
 
 **Testing the code.** The built-in suite of 26 tests can be run from
 the command line by invoking
@@ -127,7 +128,7 @@ out the number of valid boards found.
 
 Here is an example use case:
 
-    java Main -n 8 -visualise    
+    java Main -n 8 -visualise
 
 **Feasible parameters.** In our experience, using a 2020 MacBook Pro,
 solving the N-Queens-With-Lines for N=15 takes about 2 minutes. N=16

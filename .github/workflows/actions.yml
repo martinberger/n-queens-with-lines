@@ -12,7 +12,7 @@ jobs:
           - os: ubuntu-latest
           - os: windows-latest            
     steps:
-      - name: Checkout reposiTtory content
+      - name: Checkout repository content
         uses: actions/checkout@v2
       - name: Get Java
         uses: actions/setup-java@v1
@@ -20,7 +20,7 @@ jobs:
            java-version: '17'
       - name: Compiling
         run: |
-          javac *.java
+          javac -cp src -d . src/*.java
       - name: Running tests
         run: |
            java Tests
