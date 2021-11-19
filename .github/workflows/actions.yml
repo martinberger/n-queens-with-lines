@@ -17,7 +17,7 @@ jobs:
            java-version: '17'
       - name: Compiling
         run: |
-          javac Algorithm.java Config.java ErrorLib.java Helpers.java Queen.java Rational.java Strings.java Main.java Tests.java
+          javac *.java
       - name: Running tests
         run: |
            java Tests
