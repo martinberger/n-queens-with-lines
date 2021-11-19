@@ -111,6 +111,9 @@ the command line by invoking
 
     java Tests 
 
+The tester returns the number of failed tests on exit (hence 0 if all
+tests pass).  This can be used for test automation.
+
 **Running the code.** The program is run on the command line by invoking
 
     java Main <options>
