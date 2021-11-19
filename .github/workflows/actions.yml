@@ -10,6 +10,7 @@ jobs:
         include:
           - os: macos-latest
           - os: ubuntu-latest
+          - os: windows-latest            
     steps:
       - name: Checkout reposiTtory content
         uses: actions/checkout@v2
