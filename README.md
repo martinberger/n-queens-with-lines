@@ -101,7 +101,7 @@ the whole project fits in one directory, so I won't use them here.
 **Compiling the code.** All relevant code is in the `src` directory 
 directory and can be compiled by invoking
 
-    javac -cp src -d . src/*.java 
+    javac -d . src/*.java 
 
 on the command line. The compiled code is added to the repo's root
 where it can be tested and run.
