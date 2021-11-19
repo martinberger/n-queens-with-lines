@@ -10,7 +10,11 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout repository content
-        uses: actions/checkout@v2    
+        uses: actions/checkout@v2
+      - name: get Java
+        uses: actions/setup-java@v2
+        with:
+           java-version: '17'
       - name: Compiling
         run: |
           javac Algorithm.java Config.java ErrorLib.java Helpers.java Queen.java Rational.java Strings.java Main.java Tests.java
