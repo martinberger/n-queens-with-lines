@@ -1,5 +1,5 @@
 name: Basic building and testing
-
+ß
 on: [push]
 
 jobs:
@@ -12,7 +12,6 @@ jobs:
         uses: actions/setup-java@v1
         with:
            java-version: '17'
-           check-latest: true
       - name: Compiling
         run: |
           javac *.java
