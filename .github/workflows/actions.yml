@@ -1,4 +1,4 @@
-name: Basic building and testing for OSX and Ubuntu (latest)
+name: Basic building and testing for OSX, Windows, Ubuntu
 
 on: [push]
 
