@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2    
       - name: Compiling
         run: |
-          javac *.java
+          javac Algorithm.java Config.java ErrorLib.java Helpers.java Queen.java Rational.java Strings.java Main.java Tests.java
       - name: Running tests
         run: |
            java Tests
