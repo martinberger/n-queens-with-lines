@@ -1,7 +1,4 @@
-# From:
-#    https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
-
-name: learn-github-actions
+name: Basic checking.
 
 on: [push]
 
