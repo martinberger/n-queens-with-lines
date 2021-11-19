@@ -58,7 +58,7 @@ class Tester {
     }
   }
 
-  public void runAllTests(int lo, int hi) {
+  public int runAllTests(int lo, int hi) {
     System.out.println("\nRunning tests:\n");
     runUnitTests(lo, hi);
     runCountingTests(lo, hi);
@@ -66,12 +66,14 @@ class Tester {
     var successfulTests = numberOfTests - failedTests;
     System.out.println(
         "\nSuccessfully ran " + successfulTests + " of " + numberOfTests + " tests.\n");
+    return failedTests;
   }
 }
 
 class Tests {
 
   public static void main(String[] args) {
-    new Tester().runAllTests(0, 12);
+    var failedTests = new Tester().runAllTests(0, 12);
+    System.exit( failedTests );    
   }
 }
