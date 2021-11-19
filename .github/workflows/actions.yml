@@ -1,4 +1,4 @@
-name: Basic checking.
+name: Basic building and testing
 
 on: [push]
 
@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v2
-      - name: get Java
+      - name: Get Java
         uses: actions/setup-java@v1
         with:
            java-version: '17'
