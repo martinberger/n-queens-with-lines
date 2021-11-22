@@ -21,8 +21,8 @@ length 3 and slope -3.
        Q|_|_|_|_|_|_|_|        _|_|_|_|Q|_|_|_|
 
 From now on we use the term **N-Queens-With-Lines** to refer to this
-generalisation of the N-Queens problem. Here is an example of a solution to the
-8-Queens-With-Lines problem:
+generalisation of the N-Queens problem. Here is an example of a
+solution to the 8-Queens-With-Lines problem:
 
        _|_|_|_|_|Q|_|_
        _|Q|_|_|_|_|_|_
@@ -34,12 +34,13 @@ generalisation of the N-Queens problem. Here is an example of a solution to the
        _|_|Q|_|_|_|_|_
 
 **Assumptions and insights.** The N-Queens problem is NP-complete
-[B]. Although we have no proof, it is likely that the N-Queens-With-Lines
-problem is *also* NP-complete. It is therefore extremely unlikely that
-an efficient algorithm exist. For this reason, and given the limited
-time budget, we implement a simple backtracking algorithm, with an
-emphasis on clarity of the algorithm. In particular, we use a somewhat
-brute-force approach to the identification of prohibited lines:
+[B]. Although we have no proof, it is likely that the
+N-Queens-With-Lines problem is *also* NP-complete. It is therefore
+extremely unlikely that an efficient algorithm exist. For this reason,
+and given the limited time budget, we implement a simple backtracking
+algorithm, with an emphasis on clarity of the algorithm. In
+particular, we use a somewhat brute-force approach to the
+identification of prohibited lines:
 
 - We simply consider all triples of queens, compute the slope(s) they
   form and check if they form a line with three or more
@@ -61,7 +62,6 @@ brute-force approach to the identification of prohibited lines:
   numerator and denominator, are avoided here, since the exponential
   nature of (our approach to) the N-Queens-With-Lines problem ensures
   small numerator and denominator for practically feasible N.
-
 
 **Verification plan.** The problem does *not* come with a customer
 approved test suite, or other suitable testing oracle. For N >= 8
@@ -85,8 +85,8 @@ the following lightweight approach, based on counting and  testing.
     - First generate all N-Queens boards
     - Then *filter* all boards that contains lines with 3 or more points
 
-4. Compare the two solvers of the N-Queens-With-Lines problem against each
-other. More precisely, compare if the find identical numbers of
+4. Compare the two solvers of the N-Queens-With-Lines problem against
+each other. More precisely, compare if the find identical numbers of
 solutions.
 
 This is not a perfect verification strategy and with more time &
@@ -98,7 +98,7 @@ system. I therefore write everything I need by hand.  In particular, I
 have not used Java build tools like Maven or Gradle before, moreover,
 the whole project fits in one directory, so I won't use them here.
 
-**Compiling the code.** All relevant code is in the `src` directory 
+**Compiling the code.** All relevant code is in the `src` directory
 directory and can be compiled by invoking
 
     javac -d . src/*.java 
